@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Import Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Red: 'hsl(0,78%,62%)',
+            Cyan: 'hsl(180,62%,55%)',
+            Orange: 'hsl(34,97%,64%)',
+            Blue: 'hsl(212,86%,64%)',
+            Dark: 'hsl(234,12%,34%)',
+            Mid: 'hsl(229,6%,66%)',
+            Light: 'hsl(0,0%,98%)',
+          },
+          fontFamily: {
+            poppins: 'Poppins'
+          },
+          fontWeight: {
+            light: '200',
+            norm: '400',
+            bold: '600'
+          }
+        }
+      }
+    }
+  </script>
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+</head>
+
+<body class="font-poppins font-light text-sm justify-center align-center min-h-screen">
+  <main class="grid grid-cols-1 mt-6 px-8 py-8 lg:mt-10">
+
+    <header class="justify-self-center text-center mb-12 max-w-72 lg:max-w-md lg:mb-14">
+      <h1 class="text-xl leading-normal tracking-wide mb-3 lg:text-3xl lg:mb-5">
+        Reliable, efficient delivery <br>
+        <span class="text-Dark font-bold">Powered by Technology</span>
+      </h1>
+      <p class="text-Mid">
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </p>
+    </header>
+
+    <article class="grid gap-4 justify-center lg:grid-cols-3 lg:mx-auto lg:gap-8">
+
+      <section
+        class="border-t-4 border-Cyan shadow-lg shadow-slate-300 rounded-md p-5 relative min-h-48 max-w-72 lg:max-h-48 lg:my-auto">
+        <h2 class="font-bold text-Dark text-base mb-1">Supervisor</h2>
+        <p class="text-xs text-Mid leading-relaxed">Monitors activity to identify project roadblocks</p>
+        <img src="images\icon-supervisor.svg" alt="SVG Image of a Magnifying Glass"
+          class="absolute bottom-0 right-0 p-4 w-20">
+      </section>
+
+      <div class="flex flex-col gap-4 lg:gap-8">
+        <section class="border-t-4 border-Red shadow-lg shadow-slate-300 rounded-md p-5 relative min-h-48 max-w-72">
+          <h2 class="font-bold text-Dark text-base mb-1">Team Builder</h2>
+          <p class="text-xs text-Mid leading-relaxed">Scans our talent network to create the optimal team for your
+            project
+          </p>
+          <img src="images\icon-team-builder.svg" alt="SVG Image of a Homepage Depiction"
+            class="absolute bottom-0 right-0 p-4 w-20">
+        </section>
+        <section class="border-t-4 border-Orange shadow-lg shadow-slate-300 rounded-md p-5 relative min-h-48 max-w-72">
+          <h2 class="font-bold text-Dark text-base mb-1">Karma</h2>
+          <p class="text-xs text-Mid leading-relaxed">Regularly evaluates our talent to ensure quality</p>
+          <img src="images\icon-karma.svg" alt="SVG Image of a Lightbuld" class="absolute bottom-0 right-0 p-4 w-20">
+        </section>
+      </div>
+
+      <section
+        class="border-t-4 border-Blue shadow-lg shadow-slate-300 rounded-md p-5 relative min-h-48 max-w-72 w-auto lg:max-h-48 lg:my-auto">
+        <h2 class="font-bold text-Dark text-base mb-1">Calculator</h2>
+        <p class="text-xs text-Mid leading-relaxed">Uses data from past projects to provide better delivery estimates
+        </p>
+        <img src="images\icon-calculator.svg" alt="SVG Image of a Computer" class="absolute bottom-0 right-0 p-4 w-20">
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p class="justify-center text-center text-xs p-10">
+      Challenge by <a href="https://www.frontendmentor.io/profile/psychederik" target="_blank"
+        class="text-blue-700 ">Frontend
+        Mentor</a>.
+      Coded by <a href="https://github.com/psychederik" target="_blank" class="text-blue-700">Derik Boghozian</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
